@@ -75,3 +75,9 @@ impl FromStr for DbId {
         // }
     }
 }
+
+impl From<DbId> for String {
+    fn from(id: DbId) -> Self {
+        id.0.to_string()
+    }
+}

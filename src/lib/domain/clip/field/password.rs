@@ -4,7 +4,7 @@ use serde::{Deserialize, Serialize};
 
 use crate::domain::clip::ClipError;
 
-#[derive(Debug, Clone, Serialize, Deserialize)]
+#[derive(Debug, Clone, Serialize, Deserialize, PartialEq, PartialOrd)]
 pub struct Password(Option<String>);
 
 impl Password {
